@@ -73,6 +73,8 @@ const Home = () => {
         refreshControl={
           <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
         }
+
+        showsVerticalScrollIndicator={false}
       />
     </SafeAreaView>
   );

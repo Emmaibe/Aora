@@ -21,6 +21,8 @@ const SignIn = () => {
   const submit = async () => {
     if (!form.email || !form.password) {
       Alert.alert("Error", "Please fill in all the fields");
+
+      return;
     }
 
     setIsSubmitting(true);
@@ -36,7 +38,6 @@ const SignIn = () => {
 
       router.replace("/home");
     } catch (error) {
-      console.log(error)
       Alert.alert("Error", error);
     } finally {
       setIsSubmitting(false);

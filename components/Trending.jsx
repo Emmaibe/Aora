@@ -97,6 +97,7 @@ const Trending = ({ posts }) => {
         contentOffset={{ x: 170 }}
 
         horizontal
+        showsHorizontalScrollIndicator={false}
     />
   )
 }
